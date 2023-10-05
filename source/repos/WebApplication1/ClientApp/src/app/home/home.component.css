@@ -1,0 +1,27 @@
+.banner{
+    background-image: url("C:\Users\Admin\source\repos\WebApplication1\images\banner.jpg");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 90%;
+}
+.body{
+    background-color: FFB533;
+}
+#Heading{
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    
+}
+button{
+    border: none;
+    background-color: burlywood;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

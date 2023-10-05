@@ -1,0 +1,46 @@
+<div class="banner">
+  <h1 id="Heading">Recipe book</h1>
+</div> 
+  
+<p>We want to represent you a recipe book.A recipe book is one that you use daily and what we in our family call 'a living book'
+  — a book that you use all the time, not just read once and discard on the shelf. Recipes are meant to be shared - that is how they improve, are changed, how new ideas
+   are formed. </p>
+
+  
+  <h2 id="Heading">Categories</h2>
+  <div class="row">
+    <button (click)="filterByCategory('cakes')">Cakes</button>
+    <button (click)= "filterByCategory('ice-cream')">Ice cream</button>
+    <button (click)="filterByCategory('waffles')">Waffles</button>
+    <button (click)="filterByCategory('other')">Other</button>
+    <button (click)="clerFilter()">Clear</button>
+  </div>
+  
+
+  <h2 id="Heading"></h2>
+  <div >
+<!-- Recipes Items
+  ================== -->
+  <section id="items">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="Heading">Recipes</h2>
+        </div>
+      </div>
+      <div class="row" *ngFor="let item of myRecipes">
+        <!-- First recipe item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" (click)="openRecipe(item.id)">
+          <div class="recipe-item text-center">
+              <img [src]="item.src" class="recipe-image">
+            
+            <br/>
+            <h3>{{item.name}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  
+  
